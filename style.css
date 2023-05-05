@@ -3,9 +3,32 @@ body {
   margin: 0;
   background: darkgray;
   overflow: hidden;
-  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#vertical-buttons {
+  display: flex;
+  flex-direction: column;
+}
+
+button {
+  border: none;
+  border-radius: 5px;
+  margin: 2px;
+  padding: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: blue;
 }
 
 #canvas {
   background: lightgray;
+}
+
+#network-canvas {
+  background: black;
 }
